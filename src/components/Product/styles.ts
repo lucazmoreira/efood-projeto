@@ -1,11 +1,12 @@
-import styled from "styled-components"
-import { colors } from "../../styles"
-import { ButtonContainer } from "../Button/styles"
+import styled from 'styled-components'
+import { colors } from '../../styles'
+import { ButtonContainer } from '../Button/styles'
 
 export const CardContainer = styled.div`
   background-color: ${colors.primaryDark};
   width: 20rem;
   padding: 0.5rem;
+  margin-bottom: 2rem;
   color: ${colors.primaryLight};
 
   img {

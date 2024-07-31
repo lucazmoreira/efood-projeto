@@ -1,19 +1,19 @@
-import styled from "styled-components"
-import { breakpoints } from "../../styles"
+import styled from 'styled-components'
+import { breakpoints } from '../../styles'
 
 export const ListContainer = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
-  justify-content: center;
-  padding: 2.5rem 10.7rem 7.5rem 10.7rem;
-  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-width: 1050px;
+  margin: 56px auto;
 
-  @media (max-width: ${breakpoints.desktop}){
+  @media (max-width: ${breakpoints.desktop}) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (max-width: ${breakpoints.mobile}){
+  @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
   }
-` 
+`

@@ -1,13 +1,14 @@
-import styled from "styled-components"
-import { breakpoints, colors } from "../../styles"
-import { ButtonContainer } from "../Button/styles"
+import styled from 'styled-components'
+import { breakpoints, colors } from '../../styles'
+import { ButtonContainer } from '../Button/styles'
 
 export const CardContainer = styled.div`
   width: 29.5rem;
-  height: 24.875rem;
+  height: 23.5rem;
   border: 1px solid ${colors.primaryDark};
   background: #fff;
   position: relative;
+  margin: 0 auto;
 
   ${ButtonContainer} {
     padding: 0.25rem 0.37rem;
@@ -28,11 +29,11 @@ export const CardContainer = styled.div`
     object-fit: cover;
   }
 
-  @media (max-width: ${breakpoints.desktop}){
+  @media (max-width: ${breakpoints.desktop}) {
     width: 25rem;
   }
 
-  @media (max-width: ${breakpoints.mobile}){
+  @media (max-width: ${breakpoints.mobile}) {
     width: 18rem;
     height: 27rem;
   }
@@ -74,4 +75,3 @@ export const Desc = styled.p`
   line-height: 1.3rem;
   padding: 0.5rem 0.5rem;
 `
-

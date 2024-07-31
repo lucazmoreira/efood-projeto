@@ -1,6 +1,6 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 import backgroundHeader from '../../assets/images/background-header.png'
-import { Logo, breakpoints, colors } from "../../styles"
+import { Logo, breakpoints, colors } from '../../styles'
 
 export const HeaderContainer = styled.header`
   background-image: url(${backgroundHeader});
@@ -24,7 +24,7 @@ export const HeaderContainer = styled.header`
     font-size: 2.25rem;
     font-weight: 900;
 
-    @media (max-width: ${breakpoints.mobile}){
+    @media (max-width: ${breakpoints.mobile}) {
       font-size: 1.8rem;
     }
   }
