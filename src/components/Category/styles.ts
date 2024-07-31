@@ -4,7 +4,7 @@ import { ButtonContainer } from '../Button/styles'
 
 export const CardContainer = styled.div`
   width: 29.5rem;
-  height: 23.5rem;
+  height: 23rem;
   border: 1px solid ${colors.primaryDark};
   background: #fff;
   position: relative;

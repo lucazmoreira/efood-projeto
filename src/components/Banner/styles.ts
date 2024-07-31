@@ -28,18 +28,16 @@ export const Titles = styled.div`
   gap: 8rem;
   color: #fff;
   font-size: 2.4rem;
-  padding: 1rem 0rem 2rem 28rem;
+  padding: 1rem 0rem 2rem 47.5rem;
   margin: 0 auto;
 
   span {
     font-weight: 100;
-    width: 9rem;
     font-size: 2.8rem;
   }
 
   h2 {
     font-weight: 900;
-    width: 36.5rem;
   }
 
   @media (max-width: ${breakpoints.tablet}) {

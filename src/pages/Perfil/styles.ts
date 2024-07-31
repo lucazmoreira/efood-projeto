@@ -9,9 +9,11 @@ export const HeaderContainer = styled.header`
   height: 11.625rem;
   display: flex;
   align-items: center;
-  padding: 0.5rem 10rem 0.5rem 10rem;
+  background-color: blue;
+  padding: 0rem 29.5rem 0rem 29.5rem;
 
   span {
+    display: grid;
     color: ${colors.primaryDark};
     text-align: center;
     font-size: 1.125rem;
