@@ -3,6 +3,7 @@ import Button from '../Button/Button'
 import Tag from '../Tag/Tag'
 import * as Style from './styles'
 import starIcon from '../../assets/images/estrela-icon.svg'
+import { getDescription } from '../../utils'
 
 type Props = {
   image: string
@@ -11,34 +12,36 @@ type Props = {
   detach?: boolean
   type: string
   evaluation: number
+  id: number
 }
 
-const Category = ({detach, type, title, evaluation, description, image}: Props) => {
-
-  const getDescription = (description: string) => {
-    if (description.length > 210) {
-      return description.slice(0, 207) + '...'
-    }
-  }
-
+const Category = ({
+  detach,
+  type,
+  title,
+  evaluation,
+  description,
+  image,
+  id
+}: Props) => {
   return (
     <Style.CardContainer>
       <img src={image} alt={title} />
-      <div className='tags'>
+      <div className="tags">
         {detach && <Tag>Destaque da semana</Tag>}
         <Tag>{type}</Tag>
       </div>
-        <Style.Infos>
-          <Style.Title>{title}</Style.Title>
-          <div>
-            <span>{evaluation}</span>
-            <img src={starIcon} alt="estrela de avaliação" />
-          </div>
-        </Style.Infos>
-        <Style.Desc>{getDescription(description)}</Style.Desc>
-        <Link to='/perfil'>
-          <Button title='Saiba mais' background='primary' type='button' />
-        </Link>
+      <Style.Infos>
+        <Style.Title>{title}</Style.Title>
+        <div>
+          <span>{evaluation}</span>
+          <img src={starIcon} alt="estrela de avaliação" />
+        </div>
+      </Style.Infos>
+      <Style.Desc>{getDescription(description)}</Style.Desc>
+      <Link to={`/perfil/${id}`}>
+        <Button title="Saiba mais" background="primary" type="button" />
+      </Link>
     </Style.CardContainer>
   )
 }

@@ -8,7 +8,7 @@ export const HeaderContainer = styled.header`
   background-size: cover;
   text-align: center;
   height: 24rem;
-  width: 100vw;
+  width: 100%;
 
   h1 {
     line-height: 0;

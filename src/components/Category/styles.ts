@@ -4,7 +4,7 @@ import { ButtonContainer } from '../Button/styles'
 
 export const CardContainer = styled.div`
   width: 29.5rem;
-  height: 23rem;
+  height: 24.5rem;
   border: 1px solid ${colors.primaryDark};
   background: #fff;
   position: relative;
@@ -71,7 +71,7 @@ export const Title = styled.h3`
 
 export const Desc = styled.p`
   color: ${colors.primaryDark};
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   line-height: 1.3rem;
   padding: 0.5rem 0.5rem;
 `

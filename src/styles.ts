@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   primaryDark: '#E66767',
@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, san-serif;
+    list-style: none;
  }
 
  body {
