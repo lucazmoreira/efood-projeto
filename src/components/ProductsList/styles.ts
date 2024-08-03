@@ -7,7 +7,7 @@ export const ListContainer = styled.ul`
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-content: center;
-  padding: 2.5rem 10.7rem 7.5rem 10.7rem;
+  padding: 2.5rem 50.7rem 7.5rem 50.7rem;
   align-items: center;
 
   @media (max-width: ${breakpoints.desktop}) {
