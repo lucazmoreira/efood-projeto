@@ -4,9 +4,8 @@ import * as Styles from './styles'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
 import { formatPrice } from '../../utils'
-import { close, remove } from '../../store/reducers/cart'
+import { remove } from '../../store/reducers/cart'
 import Aside from '../Aside/Aside'
-import { openForm } from '../../store/reducers/form'
 
 const Cart = () => {
   const { items } = useSelector((state: RootReducer) => state.cart)
@@ -19,10 +18,6 @@ const Cart = () => {
       }
       return 0
     }, 0)
-  }
-  const goToForm = () => {
-    dispatch(close())
-    dispatch(openForm())
   }
 
   return (
