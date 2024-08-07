@@ -7,18 +7,18 @@ export const HeaderContainer = styled.header`
   background-repeat: no-repeat;
   background-size: cover;
   height: 11.625rem;
+
   display: flex;
+  justify-content: space-around;
   align-items: center;
-  background-color: blue;
-  padding: 0rem 29.5rem 0rem 29.5rem;
+  text-align: center;
 
   span {
-    display: grid;
     color: ${colors.primaryDark};
     text-align: center;
     font-size: 1.125rem;
     font-weight: 900;
-    margin: 0 auto;
+    cursor: pointer;
   }
 
   @media (max-width: ${breakpoints.mobile}) {

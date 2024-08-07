@@ -9,7 +9,10 @@ export const Container = styled.ul`
   max-width: 1050px;
   margin: 56px auto;
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 50%;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
   }
 `

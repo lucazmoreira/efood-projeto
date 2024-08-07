@@ -33,9 +33,9 @@ export const CardContainer = styled.div`
     width: 25rem;
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
-    width: 18rem;
-    height: 27rem;
+  @media (max-width: ${breakpoints.tablet}) {
+    width: 20rem;
+    height: 26rem;
   }
 `
 
