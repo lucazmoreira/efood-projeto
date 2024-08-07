@@ -30,7 +30,7 @@ const Perfil = () => {
   }
 
   if (!foodId) {
-    return <h3>caregando....</h3>
+    return <h3>Carregando...</h3>
   }
 
   return (
