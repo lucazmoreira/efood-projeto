@@ -12,4 +12,8 @@ export const ButtonContainer = styled.button<Omit<Props, 'children'>>`
   font-size: 0.875rem;
   font-weight: 700;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `

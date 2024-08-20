@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
 import SideBar from '../../components/SideBar/SideBar'
+import Loader from '../../components/Loader/Loader'
 import Banner from '../../components/Banner/Banner'
 import ProductsList from '../../components/ProductsList/ProductsList'
 import { Logo } from '../../styles'
@@ -8,7 +9,6 @@ import { HeaderContainer } from './styles'
 import logoImage from '../../assets/images/logo.png'
 import { useGetRestaurantQuery } from '../../services/api'
 import { RootReducer } from '../../store'
-import { openCart } from '../../store/reducers/cart'
 import { openSideBar } from '../../store/reducers/sideBar'
 
 export type RestaurantParams = {
@@ -24,7 +24,7 @@ const Perfil = () => {
   const { sideBarIsOpen } = useSelector((state: RootReducer) => state.sideBar)
 
   if (!foodId) {
-    return <h3>caregando....</h3>
+    return <Loader />
   }
 
   return (

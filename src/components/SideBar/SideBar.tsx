@@ -1,5 +1,4 @@
 import { useDispatch, useSelector } from 'react-redux'
-import FinishOrder from '../Form/FinishOrder'
 import Cart from '../Cart/Cart'
 import Form from '../Form/Form'
 import { Overlay } from '../../styles'
@@ -7,7 +6,6 @@ import { Container, AsideContainer, ButtonClose } from './styles'
 import closeIcon from '../../assets/images/close.png'
 import { changeComponent, closeSideBar } from '../../store/reducers/sideBar'
 import { RootReducer } from '../../store'
-import { clearCart } from '../../store/reducers/cart'
 
 const SideBar = () => {
   const dispatch = useDispatch()
@@ -19,18 +17,15 @@ const SideBar = () => {
         return <Cart />
       case 'form':
         return <Form />
-      case 'finishOrder':
-        return <FinishOrder />
       default:
         return null
     }
   }
 
   const toClose = () => {
-    if (component === 'finishOrder') {
+    if (component === 'form') {
       dispatch(closeSideBar())
       dispatch(changeComponent('cart'))
-      dispatch(clearCart())
     } else {
       dispatch(closeSideBar())
     }

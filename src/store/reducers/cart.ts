@@ -2,12 +2,10 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 type CartState = {
   itemsCart: Menu[]
-  cartIsOpen: boolean
 }
 
 const initialState: CartState = {
-  itemsCart: [],
-  cartIsOpen: false
+  itemsCart: []
 }
 
 const cartSlice = createSlice({
@@ -32,16 +30,9 @@ const cartSlice = createSlice({
     },
     clearCart: (state) => {
       state.itemsCart = []
-    },
-    openCart: (state) => {
-      state.cartIsOpen = true
-    },
-    closeCart: (state) => {
-      state.cartIsOpen = false
     }
   }
 })
 
 export default cartSlice.reducer
-export const { addToCart, clearCart, closeCart, openCart, removeOfCart } =
-  cartSlice.actions
+export const { addToCart, clearCart, removeOfCart } = cartSlice.actions

@@ -1,9 +1,16 @@
+import Loader from '../Loader/Loader'
 import Category from '../Category/Category'
-import { useGetRestaurantsListQuery } from '../../services/api'
+
 import { Container } from './styles'
 
+import { useGetRestaurantsListQuery } from '../../services/api'
+
 const CategorytList = () => {
-  const { data } = useGetRestaurantsListQuery()
+  const { data, isLoading } = useGetRestaurantsListQuery()
+
+  if (isLoading) {
+    return <Loader />
+  }
 
   return (
     <Container className="container">

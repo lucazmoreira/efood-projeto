@@ -3,7 +3,7 @@ import { ButtonContainer } from './styles'
 export type Props = {
   title: string
   type: 'button' | 'submit'
-  onClick?: () => void
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void
   background: 'primary' | 'secundary'
   children: string | string[]
 }
