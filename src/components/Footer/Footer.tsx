@@ -9,7 +9,7 @@ import { Logo } from '../../styles'
 
 const Footer = () => (
   <FooterContainer>
-    <Link to='/'>
+    <Link to="/" title="Clique aqui para ir para Home">
       <Logo src={logoImage} alt="EFOOD" />
     </Link>
     <SocialMedia>
@@ -24,7 +24,9 @@ const Footer = () => (
       </a>
     </SocialMedia>
     <p>
-      A efood é uma plataforma para divulgação de estabelecimentos responsabilidade pela entrega, qualidade <br/> dos produtos é toda do estabelecimento contratado.{' '}
+      A efood é uma plataforma para divulgação de estabelecimentos
+      responsabilidade pela entrega, qualidade <br /> dos produtos é toda do
+      estabelecimento contratado.{' '}
     </p>
   </FooterContainer>
 )
